@@ -1,0 +1,35 @@
+.venv/
+venv/
+.env
+.env.*
+!/.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+data/chroma/
+*.db
+*.db-*
+*.db.*
+*.sqlite*
+*.log
+tmp/
+*.tmp
+.coverage
+htmlcov/
+.aws/
+.codex/
+.agents/
+credentials*
+secrets.*
+.streamlit/secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Keep private PDFs out of Git; publish only these fictional samples.
+*.[pP][dD][fF]
+!/data/sample_documents/Academic Regulations.pdf
+!/data/sample_documents/Attendance Guidelines.pdf
+!/data/sample_documents/Examination Guidelines.pdf
