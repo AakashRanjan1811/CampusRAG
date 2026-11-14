@@ -115,11 +115,15 @@ Run:
 python -m pytest -q
 ```
 
-The project passed **60 automated tests** during local validation, including integration checks using MiniLM and Ollama.
+The project has **60 automated tests**: 54 unit tests that run on any fresh clone, and 6 integration tests that use the real MiniLM embedding model and a local Ollama server.
 
-## Screenshots
+To include the integration tests (requires Ollama running with the configured model):
 
-Screenshots demonstrating the chat interface, source citations, and document summaries can be added here.
+```powershell
+$env:RUN_EMBEDDING_TESTS="1"
+$env:RUN_OLLAMA_TESTS="1"
+python -m pytest -q
+```
 
 ## Limitations
 
